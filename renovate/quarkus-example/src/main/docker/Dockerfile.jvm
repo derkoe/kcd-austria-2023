@@ -82,7 +82,7 @@ FROM registry.access.redhat.com/ubi8/openjdk-17:1.16
 ENV LANGUAGE='en_US:en'
 
 # renovate: datasource=github-releases depName=DataDog/dd-trace-java
-ENV DATADOG_AGENT_VERSION=1.20.0
+ENV DATADOG_AGENT_VERSION=1.27.0
 
 RUN mkdir -p /opt/java-agents; \
     curl -sLf "https://github.com/DataDog/dd-trace-java/releases/download/v${DATADOG_AGENT_VERSION}/dd-java-agent-${DATADOG_AGENT_VERSION}.jar" --output "/opt/java-agents/dd-java-agent.jar"
